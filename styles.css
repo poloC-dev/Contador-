@@ -1,0 +1,71 @@
+/*.***** Variables *****.*/
+:root{
+    --white-color: #ffffff;
+    --main-font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+/*.************* RESET ************.*/
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--main-font-family);
+    overflow-x: hidden;
+    background: linear-gradient(to bottom, #185B63, rgb(170, 203, 224));
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*.***** Components *****.*/
+.btn{
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    border-radius: .4rem;
+    background-color: var(--white-color);
+    padding: 1rem;
+    border-radius: .5rem;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.3rem;
+    line-height: 0;
+    font-family: var(--main-font-family);
+    width: 130px;
+    margin: .7rem;
+    cursor: pointer;
+}
+    
+.btn:hover {
+    background-color: rgba(245, 245, 245, 0.825);
+    transition: all 0.3s ease-out;
+}
+
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: .4rem dashed;
+    border-color: #8BC4DF;
+}
+
+/*.***** Counter *****.*/
+#value{
+    font-size: 7rem;
+    font-weight: bold;
+    padding: 1rem 0;
+}
+
+/*.***** Tittle *****.*/
+h1{
+    font-size: 4rem;
+    letter-spacing: .2rem;
+}
